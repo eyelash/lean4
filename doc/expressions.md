@@ -381,13 +381,13 @@ show q, from and.left h₂
 
 Lean also supports a calculational environment, which is introduced with the keyword ``calc``. The syntax is as follows:
 
-.. code-block:: text
-
-    calc
-      <expr>_0  'op_1'  <expr>_1  ':'  <proof>_1
-        '...'   'op_2'  <expr>_2  ':'  <proof>_2
-         ...
-        '...'   'op_n'  <expr>_n  ':'  <proof>_n
+```
+calc
+  <expr>_0  'op_1'  <expr>_1  ':'  <proof>_1
+    '...'   'op_2'  <expr>_2  ':'  <proof>_2
+     ...
+    '...'   'op_n'  <expr>_n  ':'  <proof>_n
+```
 
 Each ``<proof>_i`` is a proof for ``<expr>_{i-1} op_i <expr>_i``.
 
@@ -538,9 +538,9 @@ end hide
 
   ``quot r`` represents the quotient of ``α`` by the smallest equivalence relation containing ``r``. ``quot.mk`` and ``quot.lift`` satisfy the following computation rule:
 
-  .ck:: text
-
-     quot.lift f h (quot.mk r a) = f a
+```
+quot.lift f h (quot.mk r a) = f a
+```
 
 - choice:
 
